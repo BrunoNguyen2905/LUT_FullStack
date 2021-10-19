@@ -1,0 +1,10 @@
+<div *ngIf="hero"><!--only display the selected hero details if the selectedHero exists.-->
+    <h2>{{hero.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{hero.id}}</div>
+    <div>
+      <label for="hero-name">Hero name: </label>
+      <input id="hero-name" [(ngModel)]="hero.name" placeholder="name"> <!--2 way binding: it binds the hero.name property to the HTML textbox so that data can flow in both directions: from the hero.name property to the textbox, and from the textbox back to the hero.name.-->
+    </div>
+    <button (click)="save()">save</button>
+    <button (click)="goBack()">go back</button>  
+</div>
