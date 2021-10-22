@@ -21,7 +21,7 @@ This folder is implemented according to the [videos](https://www.youtube.com/wat
 ## Angular (angular-tour-of-heroes)
 This folder is implemented according to the [docs](https://angular.io/tutorial/toh-pt6) from Angular Docs offered by LUT. 
 
-## CourseWork
+## CourseWork (MEAN stack)
 
 ## Project
 This folder is made to show my own project according to the knowledge I learned through these courses above.
