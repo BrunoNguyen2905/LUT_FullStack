@@ -57,7 +57,7 @@ app.get('*', (req, res) => {
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Port number
-const port = 3000;
+const port = process.env.PORT || 8080;
 
 // Start Server
 app.listen(port, () => {
