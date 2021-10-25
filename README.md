@@ -22,7 +22,7 @@ This folder is implemented according to the [videos](https://www.youtube.com/wat
 This folder is implemented according to the [docs](https://angular.io/tutorial/toh-pt6) from Angular Docs offered by LUT. 
 
 ## CourseWork (MEAN stack)
-This folder is implemented according to the [videos](https://www.youtube.com/watch?v=uONz0lEWft0&list=PLillGF-RfqbZMNtaOXJQiDebNXjVapWPZ) on Youtube offered by LUT. 
+This folder is implemented according to the [videos](https://www.youtube.com/watch?v=uONz0lEWft0&list=PLillGF-RfqbZMNtaOXJQiDebNXjVapWPZ) on Youtube offered by LUT
 
 The link to the deployed coursework is:  
 
