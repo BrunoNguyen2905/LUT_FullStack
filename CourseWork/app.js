@@ -49,9 +49,9 @@ app.use('/users', users);
 //     res.send('Invalid endpoint');
 // })
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/index.html'));
-  });
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'public/index.html'));
+//   });
   
 // Set Static Folder
 app.use(express.static(path.join(__dirname, 'public')));

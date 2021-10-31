@@ -1,7 +1,6 @@
 
 module.exports = {
-    // configure the code below with your username, password and mlab database information
-    // database: 'mongodb://<username>:<password>@ds12226.mlab.com:12226/meanauthapp',   //prod
-    database: 'mongodb://localhost:27017/meancoursework',    //dev
-    secret: 'yoursecret'
-  }
+  database: 'mongodb+srv://nhan:1234@cluster0.gsz44.mongodb.net/ecommerce?retryWrites=true&w=majority',   //prod
+  // database: 'mongodb://localhost:27017/meancoursework',    //dev
+  secret: 'yoursecret'
+}
