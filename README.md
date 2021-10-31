@@ -24,7 +24,8 @@ This folder is implemented according to the [docs](https://angular.io/tutorial/t
 ## CourseWork (MEAN stack)
 This folder is implemented according to the [videos](https://www.youtube.com/watch?v=uONz0lEWft0&list=PLillGF-RfqbZMNtaOXJQiDebNXjVapWPZ) on Youtube offered by LUT
 
-The link to the deployed coursework is:  
+The link to the deployed coursework is:  [https://warm-meadow-27981.herokuapp.com/](https://warm-meadow-27981.herokuapp.com/)
+
 
 ## Project
 This folder is made to show my own project according to the knowledge I learned through these courses above.
