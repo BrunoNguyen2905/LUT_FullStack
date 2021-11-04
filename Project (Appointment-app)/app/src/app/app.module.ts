@@ -14,6 +14,7 @@ import { MatNativeDateModule } from '@angular/material/core'
 import { MatButtonModule } from '@angular/material/button'
 import { MatDatepickerModule } from '@angular/material/datepicker'
 import { MatToolbarModule } from '@angular/material/toolbar'
+import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { AppointmentListComponent } from './appointment-list/appointment-list.component';
@@ -23,7 +24,8 @@ import { AppointmentListComponent } from './appointment-list/appointment-list.co
     AppComponent,
     HomeComponent,
     AppointmentComponent,
-    AppointmentListComponent
+    AppointmentListComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
