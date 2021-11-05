@@ -17,8 +17,16 @@ export class AppointmentService {
     return this.http.get<Appointment[]>(`${this.BASE_URL}/appointments`);
   }
 
+  getOneAppointment(id: string): Observable<Appointment> {
+    return this.http.get<Appointment>(`${this.BASE_URL}/appointments/${id}`);
+  }
+
   createAppointment(appointmentDate: string, name: string, email: string): Observable<Appointment> {
     return this.http.post<Appointment>(`${this.BASE_URL}/appointments`, { appointmentDate, name, email });
+  }
+
+  putAppointment(appointmentDate: string, name: string, email: string, id: string): Observable<any> {
+    return this.http.put<Appointment>(`${this.BASE_URL}/appointments/${id}`, { appointmentDate, name, email });
   }
 
   cancelAppointment(id: string): Observable<any> {

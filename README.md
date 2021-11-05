@@ -6,9 +6,7 @@ This repository includes the PDF file for learning diary(LUT_FullStack_learning_
 
 This repository contains 5 folders: NodeJS, ExpressJS, Angular (angular-tour-of-heroes), CourseWork and Project and for MongoDB, I added images about commands I learned in learning diary .pdf file.
 
-The link to the project I completed: 
-
-The link to a video of project running: 
+The link to a video of project running: [https://drive.google.com/file/d/1DBKTIEXutNZbkEWC32XDCtJDqXynLznn/view?usp=sharing](https://drive.google.com/file/d/1DBKTIEXutNZbkEWC32XDCtJDqXynLznn/view?usp=sharing)
 
 ## NodeJS
 This folder is implemented according to the [videos](https://www.youtube.com/watch?v=fBNz5xF-Kx4) on Youtube offered by LUT. 
@@ -28,14 +26,25 @@ The link to the deployed coursework is:  [https://warm-meadow-27981.herokuapp.co
 
 
 ## Project
-This folder is made to show my own project according to the knowledge I learned through these courses above.
+This folder is made to show my own project according to the knowledge I learned through these courses above. This project is implemented with Angular, Nodejs, Express, Material, Bootstrap.
 
 ## Installation
 
-Use npm package for installation to run the project.
+To run the project, go to Project(Appointment-app)/api, then run:
 ```bash
 npm install
 ```
-
+and then, run 
+```bash
+npm run start
+```
+After that, go to Project(Appointment-app)/app, then: 
+```bash
+npm install
+```
+After that, run
+```bash
+ng serve
+```
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

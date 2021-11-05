@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AppointmentService } from '../appointments.service';
 import { Appointment } from '../../../Appointment';
 import { mergeMap } from 'rxjs/operators';
-
+import {Router} from '@angular/router'
 @Component({
   selector: 'app-appointment-list',
   templateUrl: './appointment-list.component.html',
@@ -14,9 +14,9 @@ export class AppointmentListComponent implements OnInit {
   public errorMsg?: string;
   public successMsg?: string;
   public appointments!: Appointment[];
-  public columns = ['appointmentDate', 'name', 'email', 'cancel'];
-
-  constructor(private appointmentService: AppointmentService) { }
+  public columns = ['appointmentDate', 'name', 'email','edit', 'cancel'];
+  public editStatus = false;
+  constructor(private appointmentService: AppointmentService, private router: Router,) { }
 
   ngOnInit() {
     this.appointmentService.getAppointments()
@@ -44,4 +44,8 @@ export class AppointmentListComponent implements OnInit {
       });
   }
 
+
+  editAppointment(id: string) {
+    this.router.navigate([`${id}/edit`]);
+  }
 }

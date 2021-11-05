@@ -24,12 +24,12 @@ export class AppointmentComponent implements OnInit {
   createAppointment() {
     this.successMsg = '';
     this.errorMsg = '';
-    
     this.appointmentService.createAppointment(this.appointmentDate, this.name, this.email)
       .subscribe((createdAppointment: any) => {
         this.appointmentDate =  '';
         this.name = '';
         this.email = '';
+        
         console.log('appointmentDate', createdAppointment.msg)
         const appointmentDate = new Date(createdAppointment.msg).toDateString();
         console.log('appointmentDate1', appointmentDate, createdAppointment.appointmentDate)
@@ -39,5 +39,23 @@ export class AppointmentComponent implements OnInit {
         this.errorMsg = error.error.message;
       });
   }
+  // putAppointment() {
+  //   this.successMsg = '';
+  //   this.errorMsg = '';
+    
+  //   this.appointmentService.putAppointment(this.appointmentDate, this.name, this.email)
+  //     .subscribe((edittedAppointment: any) => {
+  //       this.appointmentDate =  '';
+  //       this.name = '';
+  //       this.email = '';
+  //       // console.log('appointmentDate', createdAppointment.msg)
+  //       const appointmentDate = new Date(edittedAppointment.msg).toDateString();
+  //       // console.log('appointmentDate1', appointmentDate, createdAppointment.appointmentDate)
+  //       this.successMsg = `Appointment Editted Successfully for ${appointmentDate}`;
+  //     },
+  //     (error: ErrorEvent) => {
+  //       this.errorMsg = error.error.message;
+  //     });
+  // }
 
 }

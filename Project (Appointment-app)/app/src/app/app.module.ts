@@ -18,6 +18,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { AppointmentListComponent } from './appointment-list/appointment-list.component';
+import { AppointmentEditComponent } from './appointment-edit/appointment-edit.component';
 // import { DatePipe } from '@angular/common';
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AppointmentListComponent } from './appointment-list/appointment-list.co
     HomeComponent,
     AppointmentComponent,
     AppointmentListComponent,
-    NavbarComponent
+    NavbarComponent,
+    AppointmentEditComponent
   ],
   imports: [
     BrowserModule,
